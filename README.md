@@ -112,3 +112,13 @@ All the variable and methods name must be in english.
 ## License
 
 The Carpoolear frontend is open-sourced software licensed under the [GPL 3.0](https://github.com/STS-Rosario/carpoolear_backend/blob/master/LICENSE).
+
+# Agustin's notes TODO tidy
+
+I managed to serve the web server by:
+1. docker compose up
+1. docker exec -it carpoolear_frontend bash
+1. TARGET_APP=carpoolear npm run build:web
+1. mkdir dist/carpoolear/production/www/app
+1. mv dist/carpoolear/production/www/ dist/carpoolear/production/www/app (this fails but go on)
+1. http-server dist/carpoolear/production/www/
