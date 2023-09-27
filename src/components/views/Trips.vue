@@ -185,7 +185,7 @@ export default {
             if (this.installAppEvent !== null) {
                 this.installAppEvent.prompt();
                 // Espera a que el usuario responda al mensaje
-                const { outcome } = await this.installAppEvent.userChoice;
+                await this.installAppEvent.userChoice;
             }
         },
         research (params) {

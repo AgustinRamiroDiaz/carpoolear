@@ -1007,7 +1007,7 @@ export default {
                 }
             }
 
-            if (!this.config.module_seat_price && this.trip.is_passenger == 0 && this.config.module_max_price) {
+            if (!this.config.module_seat_price && this.trip.is_passenger === 0 && this.config.module_max_price) {
                 let aprox = Math.ceil(this.trip.distance / 1000 / this.config.kilometer_by_liter * this.config.fuel_price) * (1 + this.config.price_variance / 100);
                 console.log('MAX APROX', (1 + this.config.price_variance / 100), aprox);
                 if (this.price > aprox) {

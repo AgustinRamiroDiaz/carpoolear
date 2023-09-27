@@ -175,8 +175,6 @@ export default {
         },
         isApple () {
             return true;
-            console.log('isApple', window.cordova.platformId);
-            return window.cordova && window.cordova.platformId.toLowerCase() === 'ios';
         },
         loginCustomHeader () {
             return this.config ? this.config.login_custom_header : '';
