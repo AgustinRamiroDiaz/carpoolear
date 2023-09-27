@@ -266,17 +266,17 @@ export default {
             if (this.donateValue > 0) {
                 var url = 'http://mpago.la/jgap'; // 50
                 switch (this.donateValue) {
-                    case '200':
-                        url = 'https://www.mercadopago.com.ar/checkout/v1/redirect?preference-id=201279444-f94a3145-7336-4d79-9eb9-76c5402894fa';
-                        break;
-                    case '400':
-                        url = 'https://www.mercadopago.com.ar/checkout/v1/redirect?preference-id=201279444-42de1d74-f967-455f-80bf-a7a77650db06';
-                        break;
-                    case '1000':
-                        url = 'https://www.mercadopago.com.ar/checkout/v1/redirect?preference-id=201279444-c693bd88-7fd4-49d8-9f22-2b80151d184e';
-                        break;
-                    default:
-                        break;
+                case '200':
+                    url = 'https://www.mercadopago.com.ar/checkout/v1/redirect?preference-id=201279444-f94a3145-7336-4d79-9eb9-76c5402894fa';
+                    break;
+                case '400':
+                    url = 'https://www.mercadopago.com.ar/checkout/v1/redirect?preference-id=201279444-42de1d74-f967-455f-80bf-a7a77650db06';
+                    break;
+                case '1000':
+                    url = 'https://www.mercadopago.com.ar/checkout/v1/redirect?preference-id=201279444-c693bd88-7fd4-49d8-9f22-2b80151d184e';
+                    break;
+                default:
+                    break;
                 }
                 window.open(url, '_blank');
                 this.showModalRequestDonation = false;

@@ -1092,8 +1092,6 @@ export default {
                         this.otherTrip.timeError.message = this.$t('fechaHoraLogicas');
                         globalError = true;
                     }
-
-
                 }
             }
 
