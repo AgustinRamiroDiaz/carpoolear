@@ -9,3 +9,6 @@ npm-debug.log
 /projects/*/cordova/www/
 /projects/*/cordova/package.json
 /projects/*/cordova/package-lock.json
+
+# Private keys and certificates
+*.pem

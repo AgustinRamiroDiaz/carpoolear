@@ -120,5 +120,14 @@ I managed to serve the web server by:
 1. docker exec -it carpoolear_frontend bash
 1. TARGET_APP=carpoolear npm run build:web
 1. mkdir dist/carpoolear/production/www/app
-1. mv dist/carpoolear/production/www/ dist/carpoolear/production/www/app (this fails but go on)
+1. mv dist/carpoolear/production/www/* dist/carpoolear/production/www/app # (this fails but go on) 
 1. http-server dist/carpoolear/production/www/
+1. go to http://localhost:8080/app/
+
+
+If you want to use it with certificated https, the last steps are:
+1. install mkcert https://web.dev/how-to-use-local-https/
+1. mkcert -install
+1. mkcert localhost
+1. http-server dist/carpoolear/production/www/ -S -C localhost.pem -K localhost-key.pem
+1. go to https://localhost:8081/app/
